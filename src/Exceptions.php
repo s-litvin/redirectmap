@@ -1,5 +1,5 @@
 <?php
-namespace litvin\redirectmap;
+namespace Litvin\Redirectmap;
 use Illuminate\Support\Facades\Facade;
 
 class Exceptions extends Facade

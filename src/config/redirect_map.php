@@ -20,7 +20,7 @@ return array(
         'action_url' => '/admin/handle/redirect_map',
         'not_found' => 'пусто',
         'is_sortable' => true,
-        'model' => 'litvin\redirectmap\RedirectMap',
+        'model' => 'Litvin\Redirectmap\Models\RedirectMap',
     ),
     'position' => array(
         'tabs' => array(

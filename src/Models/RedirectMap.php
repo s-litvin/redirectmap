@@ -1,5 +1,5 @@
 <?php
-namespace litvin\redirectmap;
+namespace Litvin\Redirectmap\Models;
 
 
 class RedirectMap extends \BaseModel

@@ -1,5 +1,5 @@
 <?php
-namespace litvin\redirectmap;
+namespace Litvin\Redirectmap;
 
 use Illuminate\Contracts\Debug\ExceptionHandler;
 use Illuminate\Foundation\AliasLoader;
@@ -21,10 +21,10 @@ class ServiceProvider extends Provider
     {
         $this->publishes([
             __DIR__.'/migrations/' => database_path('/migrations')
-        ], 'migrations');
+        ], 'redirect_map');
 
         $this->publishes([
-            __DIR__ . '/builder/' => config_path('/builder/tb-definitions')
+            __DIR__ . '/config/' => config_path('/builder/tb-definitions')
         ], 'redirect_map');
 
     }

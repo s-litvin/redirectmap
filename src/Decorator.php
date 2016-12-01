@@ -1,9 +1,10 @@
 <?php
-namespace litvin\redirectmap;
-use Closure;
+namespace Litvin\Redirectmap;
+
 use Exception;
 use Illuminate\Contracts\Debug\ExceptionHandler;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
+use \Litvin\Redirectmap\Models\RedirectMap;
 
 class Decorator implements ExceptionHandler
 {

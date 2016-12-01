@@ -1,5 +1,5 @@
 {
-  "name": "litvin/redirectmap",
+  "name": "Litvin/Redirectmap",
   "description": "Redirect map for Laravel.",
   "license": "MIT",
   "homepage": "https://github.com/s-litvin/redirectmap",
@@ -11,7 +11,7 @@
   ],
   "autoload": {
     "psr-4": {
-      "litvin\\redirectmap\\": "src"
+      "Litvin\\Redirectmap\\": "src"
     }
   }
 }

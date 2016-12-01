@@ -1,5 +1,5 @@
 <?php
-namespace litvin\redirectmap;
+namespace Litvin\Redirectmap;
 use Closure;
 use Exception;
 use ReflectionFunction;
