@@ -1,0 +1,17 @@
+{
+  "name": "litvin/redirectmap",
+  "description": "Redirect map for Laravel.",
+  "license": "MIT",
+  "homepage": "https://github.com/s-litvin/redirectmap",
+  "authors": [
+    {
+      "name": "Sergey Litvin",
+      "email": "litvin.xx@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "litvin\\redirectmap\\": "src"
+    }
+  }
+}
