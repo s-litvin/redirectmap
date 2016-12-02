@@ -30,7 +30,7 @@ Open `config/app.php` and add a new item to the providers array.
 Publish components. It will be add `config\builder\tb-definitions\redirect_map.php` and migrations.
 
 ```sh
-$ php artisan vendor:publish --provider="Litvin\redirectmap\ServiceProvider" --tag="redirect_map"
+$ php artisan vendor:publish --provider="Litvin\Redirectmap\ServiceProvider" --tag="redirect_map"
 ```
 Apply migrations
 ```sh
