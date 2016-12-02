@@ -3,18 +3,36 @@
 Package based on decorating exceptions for HttpNotFound. It will redirect to url if it checked in table "redirect_map".
 ### Installation
 Redirectmap requires Laravel 5.0.
-
-Add dependencies to `composer.json`
+Install this package through Composer. Edit your project's composer.json file to require **litvin/redirectmap**.
 ```sh
-"Litvin\\Redirectmap\\": "packages/litvin/redirectmap/src",
+"require": {
+    "litvin/redirectmap": "0.*"
+}
+````
+
+Next, add requires to composer from the terminal:
+```sh
+composer require litvin/redirectmap:0.*
+```
+... or update all composer requires:
+```sh
+composer update
 ```
 
-Publish components
+Open `config/app.php` and add a new item to the providers array. 
+```sh
+    'providers' => [
+        ...
+        Litvin\Redirectmap\ServiceProvider::class,
+    ]
+```
+
+Publish components. It will be add `config\builder\tb-definitions\redirect_map.php` and migrations.
 
 ```sh
 $ php artisan vendor:publish --provider="Litvin\redirectmap\ServiceProvider" --tag="redirect_map"
 ```
-Run migrations
+Apply migrations
 ```sh
 $ php artisan migrate
 ```
