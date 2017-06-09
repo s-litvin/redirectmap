@@ -49,7 +49,7 @@ class Decorator implements ExceptionHandler
             if ($map) return \Response::redirectTo($map->new_link);
         }
 
-        return $this->handler->render($request, $e);
+        return $this->handler::render($request, $e);
     }
     /**
      * Render an exception to the console.
